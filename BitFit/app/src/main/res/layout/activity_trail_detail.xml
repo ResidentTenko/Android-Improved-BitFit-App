@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mountain_drawn"
+
+    android:padding="10dp"
+    tools:context=".TrailDetailActivity">
+
+    <TextView
+        android:id="@+id/trailNameLabel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/milkshake"
+        android:text="Trail Name: "
+        android:paddingRight="10dp"
+
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/trailInputEt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/milkshake"
+        android:hint="Trail Name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColorHighlight="@color/some_green"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/trailNameLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/milesTravelledLabel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/milkshake"
+        android:paddingRight="10dp"
+        android:text="Miles Travelled: "
+
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trailNameLabel" />
+
+    <EditText
+        android:id="@+id/milesTravelledInputEt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/milkshake"
+        android:hint="Enter Miles"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:textAlignment="textStart"
+        android:textColorHighlight="@color/some_green"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toEndOf="@+id/milesTravelledLabel"
+        app:layout_constraintTop_toBottomOf="@+id/trailInputEt" />
+
+    <TextView
+        android:id="@+id/workoutTimeLabel"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/milkshake"
+        android:text="Hours Walked:"
+        android:paddingRight="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/milesTravelledLabel" />
+
+    <EditText
+        android:id="@+id/workoutTimeInputEt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/milkshake"
+        android:hint="Enter Hours "
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:textColorHighlight="@color/some_green"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/workoutTimeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/milesTravelledInputEt" />
+
+
+
+    <Button
+        android:id="@+id/saveNewTrailBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD NEW ENTRY"
+        android:fontFamily="@font/milkshake"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

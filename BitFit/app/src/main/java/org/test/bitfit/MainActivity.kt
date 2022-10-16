@@ -1,0 +1,55 @@
+package org.test.bitfit
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import android.widget.Button
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import kotlinx.coroutines.launch
+import org.test.bitfit.databinding.ActivityMainBinding
+
+/** Part 1
+ * 1. Create room database
+ * 2. Populate database values using edit text in Activity 2
+ * 3. Update recycler view using room database
+ */
+
+/** Part 2
+ * 1. Create two Activities (A & B)
+ * 2. Activity A contains two fragments (Trail & Summary)
+ * 3. Activity B contains has 0 fragments but collects input values
+ */
+
+class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+
+    private fun replaceFragment(hikingTrailListFragment: HikingTrailListFragment) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.hiking_trail_frame_layout, hikingTrailListFragment)
+        fragmentTransaction.commit()
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        // go to TrailDetailActivity on click
+        val newTrailButton = findViewById<Button>(R.id.addTrail)
+        newTrailButton.setOnClickListener{
+            val intent = Intent(this, TrailDetailActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Call helper method to swap the FrameLayout with the fragment
+        replaceFragment(HikingTrailListFragment())
+
+    }
+}

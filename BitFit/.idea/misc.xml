@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Documents/02_CodePath/Project_05_BitFit/BitFit/app/src/main/res/layout/activity_main.xml" value="0.1762917933130699" />
+        <entry key="..\:/Documents/02_CodePath/Project_05_BitFit/BitFit/app/src/main/res/layout/activity_trail_detail.xml" value="0.23385416666666667" />
+        <entry key="..\:/Documents/02_CodePath/Project_05_BitFit/BitFit/app/src/main/res/layout/model_hiking_trail.xml" value="0.23385416666666667" />
+        <entry key="..\:/Documents/02_CodePath/Project_06_Improved_BitFit/BitFit/app/src/main/res/drawable/ic_baseline_dashboard_24.xml" value="0.2925" />
+        <entry key="..\:/Documents/02_CodePath/Project_06_Improved_BitFit/BitFit/app/src/main/res/drawable/ic_round_directions_walk_24.xml" value="0.2925" />
+        <entry key="..\:/Documents/02_CodePath/Project_06_Improved_BitFit/BitFit/app/src/main/res/layout/activity_main.xml" value="0.2441123188405797" />
+        <entry key="..\:/Documents/02_CodePath/Project_06_Improved_BitFit/BitFit/app/src/main/res/layout/activity_trail_detail.xml" value="0.3625" />
+        <entry key="..\:/Documents/02_CodePath/Project_06_Improved_BitFit/BitFit/app/src/main/res/layout/fragment_hiking_trail_list.xml" value="0.3625" />
+        <entry key="..\:/Documents/02_CodePath/Project_06_Improved_BitFit/BitFit/app/src/main/res/layout/model_hiking_trail.xml" value="0.3625" />
+        <entry key="..\:/Documents/02_CodePath/Project_06_Improved_BitFit/BitFit/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.3625" />
+        <entry key="..\:/Documents/02_CodePath/holder/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/Documents/02_CodePath/holder/app/src/main/res/layout/activity_trail_detail.xml" value="0.3625" />
+        <entry key="..\:/Documents/02_CodePath/holder/app/src/main/res/layout/model_hiking_trail.xml" value="0.3614583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
