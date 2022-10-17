@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mountain_drawn"
+    android:background="@drawable/alessio_soggetti"
 
     android:padding="10dp"
     tools:context=".TrailDetailActivity">
@@ -17,9 +17,9 @@
         android:fontFamily="@font/milkshake"
         android:text="Trail Name: "
         android:paddingRight="10dp"
-
         android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,6 +35,9 @@
         android:textColorHighlight="@color/some_green"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/trailNameLabel"
         app:layout_constraintTop_toTopOf="parent" />
@@ -47,7 +50,7 @@
         android:fontFamily="@font/milkshake"
         android:paddingRight="10dp"
         android:text="Miles Travelled: "
-
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,6 +67,9 @@
         android:maxLines="1"
         android:textAlignment="textStart"
         android:textColorHighlight="@color/some_green"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,6 +87,7 @@
         android:paddingRight="10dp"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/milesTravelledLabel" />
 
@@ -91,6 +98,9 @@
         android:fontFamily="@font/milkshake"
         android:hint="Enter Hours "
         android:inputType="numberDecimal"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
         android:maxLines="1"
         android:textColorHighlight="@color/some_green"
         android:textSize="24sp"
@@ -98,8 +108,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/workoutTimeLabel"
         app:layout_constraintTop_toBottomOf="@+id/milesTravelledInputEt" />
-
-
 
     <Button
         android:id="@+id/saveNewTrailBt"

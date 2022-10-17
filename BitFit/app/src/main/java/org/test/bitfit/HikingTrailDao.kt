@@ -35,4 +35,7 @@ interface HikingTrailDao {
     // delete all values in the database
     @Query("DELETE FROM hiking_trail_table")
     fun deleteAll()
+
+    @Query("SELECT SUM(miles_travelled) FROM hiking_trail_table")
+    fun getTotalMiles(): Double
 }
