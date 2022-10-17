@@ -37,5 +37,8 @@ interface HikingTrailDao {
     fun deleteAll()
 
     @Query("SELECT SUM(miles_travelled) FROM hiking_trail_table")
-    fun getTotalMiles(): Double
+    fun getTotalMiles(): Float
+
+    @Query("SELECT SUM(workout_time) FROM hiking_trail_table")
+    fun getTotalHours(): Float
 }
