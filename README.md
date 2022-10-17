@@ -4,7 +4,7 @@ Submitted by: **Fidel Ojimba**
 
 **Improved BitFit** is a health metrics app that allows users to track their hiking adventures.
 
-Time spent: **6** hours spent in total
+Time spent: **12** hours spent in total
 
 ## Required Features
 
